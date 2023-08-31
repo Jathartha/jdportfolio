@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  
+  background-size: cover;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  font-size: 25px;
+}
+
+/* ... Previous CSS code ... */
+
+nav {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between;
+    padding: 20px 100px 10px; /* Adjust top padding */
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  nav ul li {
+    padding: 0 15px; /* Adjust padding */
+  }
+  
+  .content {
+    position: absolute;
+    top: 40%; /* Adjust the percentage to move the content further up */
+    left: 8%;
+    transform: translate(-8%, -50%);
+    z-index: 1;
+    text-align: left;
+  }
+  
+  /* ... Previous CSS code ... */
+  
+
+nav ul li a {
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fd4766;
+}
+
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+/* ... Previous CSS code ... */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /*background-image: url("safar-safarov-MSN8TFhJ0is-unsplash.jpg"); /* Set the background image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* ... Previous CSS code ... */
+  
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px ;
+}
+
+.project {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgb(223, 225, 228);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.project:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project p {
+  font-size: 24px;
+  color: #555;
+}
+/* Base styling for the icon container */
+
+.content {
+  position: absolute;
+  top: 60%; /* Adjust the position */
+  left: 8%;
+  transform: translate(-8%, -50%);
+  z-index: 1;
+  text-align: left;
+}
+
+.content {
+    position: absolute;
+    top: 60%; /* Adjust the position */
+    left: 8%;
+    transform: translate(-8%, -50%);
+    z-index: 1;
+    text-align: left;
+  }
+  
+  .content .title {
+    color: #0a0a0a;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .content h1 {
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+  }
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px; /* Adjust margins as needed */
+  }
+  
+  
+  .content h1 span {
+    color: #fd4766;
+  }
+  
+  .content p {
+    width: 55%;
+    color: #202020;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+  .contact {
+    background-color: #f5f5f5; /* Background color for the contact section */
+    padding: 40px; /* Adjust padding as needed */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  .contact h2 {
+    margin-bottom: 20px; /* Add some space below the heading */
+  }
+  
+  .contact p {
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+  }
+  .signature {
+    margin-top: 40px; /* Add spacing above the signature */
+    font-size: 20px; /* Adjust font size as needed */
+    color: #888; /* Adjust color as needed */
+  }
+  /* Styling for the .about section */
+.about {
+  background-color: #fff;
+  padding: 40px; /* Increased padding for more space */
+  margin-top: 40px;
+  border-radius: 8px; /* Adding rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+}
+
+/* Styling for the heading within .about */
+.about h2 {
+  text-align: center;
+  font-size: 2.75rem; /* Using "rem" units for better responsiveness */
+  margin-bottom: 20px; /* Increased margin for separation */
+  color: #333; /* Adjust the color as needed */
+}
+
+/* Styling for the paragraph within .about */
+.about p {
+  font-size: 1.8rem; /* Using "rem" units for better responsiveness */
+  line-height: 1.6;
+  color: #666; /* Adjust the color as needed */
+}
+/* Base styling for the social icon container */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for individual social icons */
+.social-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+/* Zoom-out and shadow effect on hover */
+.social-icon:hover {
+  transform: scale(1.2); /* Zoom out effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .about {
+    padding: 30px; /* Adjusted padding for smaller screens */
+  }
+
+  .about h2 {
+    font-size: 2.25rem; /* Adjusted font size for smaller screens */
+  }
+
+  .about p {
+    font-size: 1.6rem; /* Adjusted font size for smaller screens */
+  }
+}
+
+  
+  /* Skills Section */
+  
+  .skills {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .skills h2 {
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 10px;
+  }
+  
+  .skills .skill-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .skills .skill-list li {
+    margin-bottom: 10px;
+  }
+  
+  .skills .skill-list li:hover {
+    background-color: #f5ebeb;
+  }
+  
+  /* Other */
+  
+  body {
+    font-family: sans-serif;
+  }
+.profile-image {
+  width: 600px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  bottom: -150px; /* Adjust the position */
+  right: 500%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 768px) {
+  .about img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    padding: 30px;
+  }
+
+  /* Adjust other responsive styles as needed */
+}
+/* ... Previous CSS code ... */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+   background-image: url("beige-aesthetic-background.jpg");
+    background-size: 250%; /* Make the background image larger */
+    background-position: right; /* Center the background image */
+    display: flex;
+    justify-content:right;
+    align-items: right;
+  }
+
+  /* ... Previous CSS code ... */
+  
