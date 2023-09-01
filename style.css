@@ -234,7 +234,7 @@ nav ul li a:hover:after {
 /* Style the skill description text */
 .skill-description {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(254, 253, 253, 0.8);
   color: white;
   padding: 5px 10px;
   border-radius: 2px;
