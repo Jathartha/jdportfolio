@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Personal Portfolio Website</title>
+    <link rel="website icon" type="png"
+    href="icons8-showing-small-size-48.png">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <div class="hero">
+                <div class="content">
+                    <!-- Content text and buttons -->
+                    <img src="2206.jpg" alt="Profile Image" class="profile-image">
+                </div>
+                
+               
+            </div>
+            
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                
+                
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            
+        </nav>
+        <div class="content">
+            <span class="title">Website Developer</span>
+            <h1>Hello, I’m <span>Jathartha Das</span></h1>
+            <p>
+                I’m working on professional, visually sophisticated and
+                technologically proficient, responsive and multi-functional Websites.
+            </p>
+            <a href="JasanResume.pdf" class="btn" target="_blank">View Resume</a>
+           
+        </div>
+    </div>
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate website developer with a strong focus on creating professional, visually sophisticated, and technologically proficient websites. I have a knack for designing responsive and multi-functional web solutions that cater to diverse user needs.
+            </p>
+            <p>
+                With a keen interest in the latest web development technologies, I strive to deliver seamless user experiences through my work. Whether it's crafting elegant user interfaces or implementing robust backend functionality, I am dedicated to creating web solutions that leave a lasting impression.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <img src="icons8-html-100.png" alt="html" className="skill-icon" />
+
+                <img src="icons8-css-100.png" alt="css" className="skill-icon" />
+
+                <img src="icons8-javascript-96.png" alt="Javascript" className="skill-icon" />
+
+                <img src="icons8-react-js-80.png" alt="React" className="skill-icon" />
+
+                <img src="icons8-nodejs-96.png" alt="React" className="skill-icon" />
+
+                
+               
+                <img src="icons8-postgres-100.png" alt="React" className="skill-icon" />
+                
+                <img src="icons8-r-project-96.png" alt="React" className="skill-icon" />
+                <img src="icons8-python-100.png" alt="React" className="skill-icon" />
+                <img src="icons8-java-96.png" alt="React" className="skill-icon" />
+                <img src="icons8-android-studio-96.png" alt="React" className="skill-icon" />
+                <img src="icons8-flask-100.png" alt="React" className="skill-icon" />
+               
+
+               
+            </ul>
+        </div>
+    </section>
+   
+
+
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>
+                    ChatGPT Clone Android App </h3>
+                <p>The ChatGPT clone Android app is designed to provide users with personalized responses to their queries. It uses Open-AI API to understand user input.</p>
+            </div>
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>AI Image Generation MERN APP</h3>
+                <p>AI Image Generation app developed using MERN stack and OpenAI API. Uses MongoDB for efficient data storage, Express.js for server-side logic, and React.js for a dynamic user interface</p>
+            </div>
+            <div class="project">
+                <h3>Phishing URL Detection using Machine Learning</h3>
+                <p>The phishing URL detection project using Python and Flask involves building a web application that uses machine learning to identify and classify suspicious URLs.</p>
+            </div>
+            <div class="project">
+                <h3>Stock Market Price Analysis and Prediction Using R-Programming</h3>
+                <p>The Stock Market Price Analysis and Prediction project using R programming involved using statistical and machine learning techniques to analyze historical stock market data and make predictions about future stock prices. </p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>You can reach me at: dasjathartha@gmail.com</p>
+            <p>You can call me at: +91-9938947706</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/jatharthadas" target="_blank">
+                  <img src="icons8-instagram-100.png" alt="Instagram" class="social-icon" />
+                </a>
+                <a href="https://www.linkedin.com/in/jathartha-das-20823a204/" target="_blank">
+                  <img src="icons8-linkedin-100.png" alt="LinkedIn" class="social-icon" />
+                </a>
+                <a href="https://github.com/Jathartha" target="_blank">
+                    <img src="icons8-github-100 (1).png" alt="Github" class="social-icon" />
+                  </a>
+              </div>
+              
+            <p class="signature"> Made With ❤️ by Jathartha Das </p>
+        </div>
+    </section>
+    <script>
+        // Add a click event listener to all navigation links
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', scrollToSection);
+        });
+    
+        // Function to scroll to the corresponding section smoothly
+        function scrollToSection(event) {
+            event.preventDefault(); // Prevent default link behavior
+            const targetId = this.getAttribute('href'); // Get the target section's ID
+            const targetSection = document.querySelector(targetId); // Find the target section
+            const targetOffsetTop = targetSection.offsetTop; // Get the target's position from the top
+            const scrollOptions = {
+                top: targetOffsetTop,
+                behavior: 'smooth' // Use smooth scrolling behavior
+            };
+            window.scrollTo(scrollOptions);
+        }
+    </script>
+    
+
+</body>
+</html>
+
