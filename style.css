@@ -341,7 +341,7 @@ button[type="submit"]:hover {
 }
 
 .signature {
-  font-size: 48px;
+  font-size: 30px;
   animation: heartbeat 1s infinite alternate; /* Apply the animation */
 }
 
