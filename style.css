@@ -191,11 +191,66 @@ nav ul li a:hover:after {
     text-transform: inherit;
     width: 70%;
   }
-  .skill-icon {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px; /* Adjust margins as needed */
-  }
+.skills {
+  padding: 40px 0;
+  background-color: #f7f7f7; /* Adjust the background color as needed */
+}
+
+/* Center the content within the container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Style the skills list */
+.skill-list {
+  list-style: none;
+  padding: 20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style individual skill icons and their descriptions */
+.skill-list li {
+  text-align: left; /* Center the icon and description */
+  margin: 10px; /* Add spacing between icons */
+  position: relative; /* Required for absolute positioning of descriptions */
+  cursor: pointer; /* Change the cursor on hover */
+}
+
+.skill-icon {
+  width: 100px; /* Adjust the width as per your icon size */
+  height: auto;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition for zoom effect */
+}
+
+/* Apply the hover effect to the .skill-icon elements */
+.skill-list li:hover .skill-icon {
+  transform: scale(1.2); /* Zoom in on hover */
+}
+
+/* Style the skill description text */
+.skill-description {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 2px;
+  z-index: 1;
+  bottom: 100%; /* Position the text above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0; /* Initially hide the text */
+  pointer-events: none; /* Ensure the text doesn't interfere with hover */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show the skill description on hover */
+.skill-list li:hover .skill-description {
+  opacity: 1; /* Make the text visible on hover */
+}
   
   
   .content h1 span {
