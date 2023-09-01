@@ -117,11 +117,11 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+ <section class="contact" id="contact">
         <div class="container">
             <h2>Contact Information</h2>
             <p>You can reach me at: dasjathartha@gmail.com</p>
-            <p>You can call me at: +91-9938947706</p>
+            
             <div class="social-icons">
                 <a href="https://www.instagram.com/jatharthadas" target="_blank">
                   <img src="icons8-instagram-100.png" alt="Instagram" class="social-icon" />
@@ -133,10 +133,21 @@
                     <img src="icons8-github-100 (1).png" alt="Github" class="social-icon" />
                   </a>
               </div>
-              
-            <p class="signature"> Made With ❤️ by Jathartha Das </p>
-        </div>
-    </section>
+              <section id="contact">
+                <h2>Feel free to Contact me by submitting the form below</h2>
+                <form action="process_form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </section>
     <script>
         // Add a click event listener to all navigation links
         const navLinks = document.querySelectorAll('nav a');
