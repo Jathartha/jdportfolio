@@ -333,6 +333,28 @@ button[type="submit"]:hover {
     font-size: 1.6rem; /* Adjusted font size for smaller screens */
   }
 }
+.signature-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signature {
+  font-size: 48px;
+  animation: heartbeat 1s infinite alternate; /* Apply the animation */
+}
+
+/* Define the animation */
+@keyframes heartbeat {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.2);
+  }
+}
+
 
 
   
