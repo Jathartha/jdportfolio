@@ -406,6 +406,54 @@ button[type="submit"]:hover {
     justify-content:right;
     align-items: right;
   }
+@media (max-width: 768px) {
+  /* Hide the standard navigation */
+  nav ul {
+    display: none;
+  }
+  
+  /* Show the mobile menu icon */
+  .mobile-menu-icon {
+    display: block;
+  }
+  
+  /* Style the mobile menu */
+  .mobile-menu {
+    display: block;
+    /* Add styles for the mobile menu */
+  }
+  .content {
+    padding: 10px;
+    margin: 10px;
+  }
+  @media (max-width: 768px) {
+    /* Adjust image sizes */
+    .profile-image {
+      width: 100px;
+    }
+}
+/* For screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 768px) {
+  /* Reduce font size for text */
+  body {
+    font-size: 14px;
+  }
+  
+  /* Adjust heading font sizes */
+  h1 {
+    font-size: 24px;
+  }
+  
+  /* Modify other text sizes as needed */
+}
+
+
+
+/* ... Other existing CSS styles ... */
+
+
+
+}
 
   /* ... Previous CSS code ... */
   
