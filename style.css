@@ -251,6 +251,54 @@ nav ul li a:hover:after {
 .skill-list li:hover .skill-description {
   opacity: 1; /* Make the text visible on hover */
 }
+<style>
+/* Style for the "hire" section */
+.hire {
+    background-color: #f5f5f5;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+/* Style for the container within the section */
+.container {
+    text-align: center;
+    
+}
+
+/* Style for the h2 element */
+h2 {
+    font-size: 34px;
+    color: #333;
+}
+
+/* Style for the "Hire Me" button */
+/* Style for the "Hire Me" button */
+.hire-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #fd4766;
+  color: #fff;
+  font-size: 28px;
+  text-decoration: underline;
+  border-radius: 50px;
+  border: 2px solid #fd4766; /* Add a border */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Increase letter spacing */
+  cursor: pointer; /* Change cursor on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Hover effect for the button */
+.hire-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+  border: 2px solid #0056b3; /* Change border color on hover */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
+
+</style>
   
   
   .content h1 span {
