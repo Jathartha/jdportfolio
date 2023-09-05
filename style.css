@@ -208,6 +208,7 @@ nav ul li a:hover:after {
   list-style: none;
   padding: 20;
   display: flex;
+ flex-wrap: wrap;
   
   justify-content: center;
 }
