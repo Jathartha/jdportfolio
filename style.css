@@ -297,6 +297,27 @@ h2 {
   border: 2px solid #0056b3; /* Change border color on hover */
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
 }
+.hire-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+.hire {
+  font-size: 48px;
+  animation: lightning 1s alternate infinite;
+  color: #fd4766;
+}
+
+@keyframes lightning {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
 
 
 </style>
