@@ -6,11 +6,14 @@
 
     <title>Personal Portfolio Website</title>
     <link rel="website icon" type="png"
-    href="icons8-showing-small-size-48.png">
+    href="icons8-small-hearts.gif">
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Include Bootstrap CSS -->
+
+
     <div class="hero">
         <nav>
             <div class="hero">
@@ -26,10 +29,14 @@
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#licenses">Certifications</a></li>
+
                 
                 
                 <li><a href="#contact">Contact</a></li>
+                
             </ul>
             
             
@@ -39,9 +46,9 @@
             <h1>Hello, I’m <span>Jathartha Das</span></h1>
             <p>
                 I’m working on professional, visually sophisticated and
-                technologically proficient, responsive and multi-functional Websites.
+                technologically proficient, responsive and multi-functional websites.
             </p>
-            <a href="JasanResume (1).pdf" class="btn" target="_blank">View Resume</a>
+            <a href="JasanResume.pdf" class="btn" target="_blank">View Resume</a>
            
         </div>
     </div>
@@ -127,6 +134,20 @@
             </ul>
         </div>
     </section>
+    <div class="row">
+        <div class="col-xs-9 col-md-7"></div>
+        <div class="col-xs-3 col-md-5"></div>
+      </div>
+      
+      <div class="row">
+        <div class="col-xs-6 col-md-10"></div>
+        <div class="col-xs-6 col-md-2">.</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-xs-6"></div>
+        <div class="col-xs-6"></div>
+      </div>
    
 
 
@@ -137,7 +158,7 @@
             <!-- Project 1 -->
             <div class="project">
                 <h3>
-                    ChatGPT Clone Android Application</h3>
+                    ChatGPT Clone Android Application </h3>
                 <p>The ChatGPT clone Android app is designed to provide users with personalized responses to their queries. It uses Open-AI API to understand user input.</p>
             </div>
             <!-- Project 2 -->
@@ -156,19 +177,79 @@
             <!-- Add more projects as needed -->
         </div>
     </section>
-    <section class="hire" id="hire">
-        <div class="container">
-            <h2>Your Web Vision, My Code Mission</h2>
-            
-            <a href="JasanResume (1).pdf" class="btn" target="_blank">Hire Me</a>
-        </div>
-    </section>
+   
+    <!-- ... Your existing HTML code ... -->
 
- <section class="contact" id="contact">
+<!-- Experience Section -->
+<section class="experience" id="experience">
+    <div class="container">
+        <h2>Experience</h2>
+       
+        <div class="experience-item">
+            <h3>Project Intern - National Informatics Center(NIC)</h3>
+            <a href="your-experience-pdf.pdf" target="_blank">
+                <img src="nic-logo (1).png" alt="Company Logo" class="company-logo">
+            </a>
+            <p>During my role as a project intern at the National Informatics Centre (NIC), I had the opportunity to contribute to data analysis and front-end web development projects. I played a key role in designing and developing user-friendly front-end interfaces for web applications, ensuring an enhanced user experience.</p>
+    <p>Additionally, I leveraged machine learning techniques to extract valuable insights from data, further enhancing the functionality and effectiveness of our web solutions. My experience at NIC allowed me to work on projects that blend technology and data analysis, shaping my skills and passion for web development and data-driven decision-making.</p>
+           
+</div>
+        
+        <!-- Add more experience items as needed -->
+    </div>
+</section>
+
+<!-- Licenses Section -->
+<section class="licenses" id="licenses">
+    <div class="container">
+        <h2>Certifications</h2>
+        <p>I hold the following licenses and certifications related to web development and programming:</p>
+        <ul>
+            <a href="Introduction to AI(IBM).pdf" target="_blank">
+                <img src="icons8-ibm-96.png" alt="Company Logo" class="company-logo">
+                
+            </a>
+            <a href="Introduction to Machine Learning(AWS).pdf" target="_blank">
+                <img src="icons8-amazon-aws-96.png" alt="Company Logo" class="company-logo">
+                
+            </a>
+            <a href="Introduction to Android Mobile Application Development.pdf" target="_blank">
+                <img src="icons8-meta-96.png" alt="Company Logo" class="company-logo">
+                
+            <a href="problem_solving_basic certificate.pdf" target="_blank">
+                <img src="icons8-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-96.png" alt="Company Logo" class="company-logo">
+                
+            </a>
+            <a href="eCertificate-oracle.pdf" target="_blank">
+                <img src="294664_oracle_icon.png" alt="Company Logo" class="company-logo">
+                
+            </a>
+            <a href="java_basic certificate.pdf" target="_blank">
+                <img src="icons8-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-96.png" alt="Company Logo" class="company-logo">
+                
+            </a>
+            <!-- Add more licenses and certifications as needed -->
+        </ul>
+    </div>
+</section>
+
+<!-- ... Your existing HTML code ... -->
+
+<section class="hire" id="hire">
+    <div class="container">
+        <h2>Your Web Vision, My Code Mission</h2>
+        
+        <a href="JasanResume.pdf" class="btn" target="_blank">Hire Me</a>
+    </div>
+</section>
+          
+
+    <section class="contact" id="contact">
         <div class="container">
             <h2>Contact Information</h2>
             <a href="mailto:dasjathartha@gmail.com">
                 <img src="icons8-gmail-100.png" alt="Gmail" class="social-icon" />
+                
             </a>
             
             <div class="social-icons">
@@ -183,9 +264,8 @@
                   </a>
               </div>
               <section id="contact">
-                <h2>Feel free to Contact me by submitting the form:</h2>
-                  <form name="contact" netlify>
-                
+                <h2>Feel free to Contact me by submitting the form: </h2>
+                <form name="contact" netlify>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                     
@@ -198,7 +278,11 @@
                     <button type="submit">Send</button>
                 </form>
             </section>
+              
             <p class="signature"> Made With ❤️ by Jathartha Das </p>
+          
+        </div>
+    </section>
     <script>
         // Add a click event listener to all navigation links
         const navLinks = document.querySelectorAll('nav a');
@@ -223,4 +307,6 @@
 
 </body>
 </html>
+
+
 
