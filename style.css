@@ -191,6 +191,9 @@ nav ul li a:hover:after {
     text-transform: inherit;
     width: 70%;
   }
+  
+/* Style the skills section */
+/* Style the skills section */
 .skills {
   padding: 40px 0;
   background-color: #f7f7f7; /* Adjust the background color as needed */
@@ -208,8 +211,7 @@ nav ul li a:hover:after {
   list-style: none;
   padding: 20;
   display: flex;
- flex-wrap: wrap;
-  
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -236,7 +238,7 @@ nav ul li a:hover:after {
 .skill-description {
   position: absolute;
   background-color: rgba(8, 0, 0, 0.8);
-  color: white;
+  color: rgb(250, 245, 245);
   padding: 5px 10px;
   border-radius: 2px;
   z-index: 1;
@@ -256,14 +258,12 @@ nav ul li a:hover:after {
 /* Style for the "hire" section */
 .hire {
     background-color: #f5f5f5;
-    padding: 30px 0;
-    font-size: 20px;
+    padding: 20px 0;
 }
 
 /* Style for the container within the section */
 .container {
     text-align: center;
-    
 }
 
 /* Style for the h2 element */
@@ -275,27 +275,27 @@ h2 {
 /* Style for the "Hire Me" button */
 /* Style for the "Hire Me" button */
 .hire-button {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: #fd4766;
-  color: #fff;
-  font-size: 28px;
-  text-decoration: underline;
-  border-radius: 50px;
-  border: 2px solid #fd4766; /* Add a border */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
-  text-transform: uppercase; /* Uppercase text */
-  letter-spacing: 2px; /* Increase letter spacing */
-  cursor: pointer; /* Change cursor on hover */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fd4766;
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid #fd4766; /* Add a border */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Increase letter spacing */
+    cursor: pointer; /* Change cursor on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
 
 /* Hover effect for the button */
 .hire-button:hover {
-  background-color: #0056b3;
-  color: #fff;
-  border: 2px solid #0056b3; /* Change border color on hover */
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+    background-color: #0056b3;
+    color: #fff;
+    border: 2px solid #0056b3; /* Change border color on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
 }
 .hire-container {
   display: flex;
@@ -318,11 +318,113 @@ h2 {
     opacity: 0.3;
   }
 }
+/* Style the Experience section */
+/* Style the Experience section */
+/* Style for the Experience section */
+.experience {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  transition: box-shadow 0.3s;
+}
 
+.experience:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.experience h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.experience-item h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.experience-item p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Style for the company logo */
+/* Style for the company logos in the Licenses section */
+.company-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px; /* Adjust the spacing as needed */
+}
+
+.company-logo {
+  border-radius: 100%;
+  width: 1000px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  transition: transform 0.3s;
+}
+
+.company-logo:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* Style the Licenses section */
+.licenses {
+  background-color: #e5e5e5;
+  padding: 20px;
+  border: 1px solid #ccc;
+  transition: box-shadow 0.3s;
+}
+
+.licenses:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.licenses h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.licenses p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.licenses ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.licenses li {
+  font-size: 1.1rem;
+  color: #333;
+}
+/* Style for the company logos in the Licenses section */
+.company-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px; /* Adjust the spacing as needed */
+}
+
+.company-logo {
+  gap: 800px;
+  border-radius: 120%;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  transition: transform 0.3s;
+}
+
+.company-logo:hover {
+  transform: scale(1.1);
+}
 
 </style>
-  
-  
   .content h1 span {
     color: #fd4766;
   }
@@ -390,10 +492,17 @@ h2 {
   margin: 0 10px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
+
+/* Zoom-out and shadow effect on hover */
+.social-icon:hover {
+  transform: scale(1.2); /* Zoom out effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+/* CSS for Contact Form Section */
 #contact {
   background-color: #f5f5f5; /* Background color for the contact section */
   padding: 40px; /* Padding for the contact section */
-  border-radius: 10px; /* Rounded corners for the section */
+  border-radius: 15px; /* Rounded corners for the section */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for the section */
   text-align: center; /* Center the content horizontally */
 }
@@ -438,11 +547,6 @@ button[type="submit"]:hover {
   background-color: #ff2e54; /* Background color on hover */
 }
 
-/* Zoom-out and shadow effect on hover */
-.social-icon:hover {
-  transform: scale(1.2); /* Zoom out effect */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-}
 
 /* Media query for responsiveness */
 @media (max-width: 768px) {
@@ -458,6 +562,7 @@ button[type="submit"]:hover {
     font-size: 1.6rem; /* Adjusted font size for smaller screens */
   }
 }
+/* Apply basic styles to the heart emoji */
 .signature-container {
   display: flex;
   justify-content: center;
@@ -466,7 +571,7 @@ button[type="submit"]:hover {
 }
 
 .signature {
-  font-size: 30px;
+  font-size: 48px;
   animation: heartbeat 1s infinite alternate; /* Apply the animation */
 }
 
@@ -481,11 +586,10 @@ button[type="submit"]:hover {
 }
 
 
-
   
   /* Skills Section */
   
-  .skills {
+  /*.skills {
     background-color: #f7f7f7;
     padding: 20px;
     margin-top: 20px;
@@ -543,6 +647,40 @@ button[type="submit"]:hover {
 }
 /* ... Previous CSS code ... */
 
+  /* Add these media queries for responsiveness */
+
+/* For screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column; /* Stack content vertically */
+      align-items: center; /* Center align content */
+      text-align: center; /* Center-align text */
+  }
+  .content {
+      margin-top: 20px; /* Adjust spacing */
+  }
+  .profile-image {
+      width: 150px; /* Adjust image size for smaller screens */
+  }
+}
+
+/* For screens larger than 768px (e.g., tablets and desktops) */
+@media (min-width: 769px) {
+  .hero {
+      flex-direction: row; /* Display content side by side */
+      justify-content: space-between; /* Space elements evenly */
+      align-items: center; /* Align content vertically */
+  }
+  .content {
+      text-align: left; /* Reset text alignment */
+      margin-top: 0; /* Reset margin */
+  }
+  .profile-image {
+      width: 200px; /* Adjust image size for larger screens */
+  }
+}
+
+/* Your existing CSS for .hero */
 .hero {
   position: relative;
   width: 100%;
@@ -554,6 +692,7 @@ button[type="submit"]:hover {
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
 }
+
 @media (max-width: 768px) {
   /* Hide the standard navigation */
   nav ul {
@@ -594,6 +733,9 @@ button[type="submit"]:hover {
   
   /* Modify other text sizes as needed */
 }
+/* Style the Experience section */
+
+
 
 
 
@@ -602,6 +744,6 @@ button[type="submit"]:hover {
 
 
 }
+/* Style individual skill icons and their descriptions */
 
-  /* ... Previous CSS code ... */
-  
+
